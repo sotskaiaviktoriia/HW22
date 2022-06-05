@@ -1,0 +1,20 @@
+@mixin default($bgcolor: #e66465) {
+  width: 200px;
+  height: 200px;
+  background-color: $bgcolor;
+}
+
+.square {
+  @include default;
+}
+.circle {
+  @include default;
+  border-radius: 50%;
+}
+.rectangle {
+  @include default;
+  width: 400px;
+}
+.initial-figure {
+  @include default;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="row p-5 justify-content-start">
+      <div class="col-3">
+        <label for="select" class="form-label p-2">Select figure</label>
+        <select class="form-select m-2" id="select">
+          <option value="square" selected>Square</option>
+          <option value="circle">Circle</option>
+          <option value="rectangle">Rectangle</option>
+        </select>
+
+        <label for="color" class="form-label p-3">Select color</label>
+        <input
+          type="color"
+          class="color-input form-control-color m-3"
+          id="color"
+          value="#e66465"
+          title="Choose your color"
+        />
+      </div>
+
+      <div class="col-3">
+        <div class="initial-figure"></div>
+      </div>
+    </div>
+    <script src="./js/script.min.js"></script>
+  </body>
+</html>
